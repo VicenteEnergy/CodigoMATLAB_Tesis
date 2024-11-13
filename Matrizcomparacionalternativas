@@ -1,0 +1,337 @@
+% Datos de sentimiento por alternativas
+sentimientos_incentivos_fiscales = [1.80,4.20,1.80,2.00,8.40,4.20];
+sentimientos_infraestructura_carga = [5.00, 5.00, 5.00,2.60, 5.00, 5.00,4.80,5.00,5.00,4.80,];
+sentimientos_promover_vehiculo_electrico = [4.80,1.80 ,4.20 ,5.00 ,2.60,5.00 ,1.60 ,4.20 ,4.80 ,5.00, 5.00 ,5.00,5.00, 4.80,1.80 ,4.20 , 5.00,5.00 ,1.40 ,5.00, 2.60 ,5.00 ,4.20 ,5.00 , 4.20 ,5.00 ,1.60 , 4.20 ,4.80 ,5.00,5.00 ,5.00,5.00,7.80,2.00 ,2.40 ,5.00,5.00 ,2.40,5.00 ,5.00 ];
+sentimientos_promocion_electromovilidad = [2.60 ,5.00,5.00 ,4.20,5.00,2.00 ,2.00, 3.00 ,4.80 ,2.60 ,5.00 ,5.00 ,4.20 ,1.60 ,5.00 ,2.00 ,2.00 ,3.00 ,2.60 ,2.40,3.00,2.40 ,4.80,4.20,5.00 ,2.60 ,4.20 ,4.80 ,5.00];
+% Cálculo de la media geométrica de cada alternativa
+media_incentivos_fiscales = geomean(sentimientos_incentivos_fiscales);
+media_infraestructura_carga = geomean(sentimientos_infraestructura_carga);
+media_promover_vehiculo_electrico = geomean(sentimientos_promover_vehiculo_electrico);
+media_promocion_electromovilidad = geomean(sentimientos_promocion_electromovilidad);
+
+% Mostrar la media geométrica de cada alternativa en la Command Window
+disp('Media geométrica de cada alternativa:');
+fprintf('Incentivos Fiscales: %.2f\n', media_incentivos_fiscales);
+fprintf('Infraestructura de Carga: %.2f\n', media_infraestructura_carga);
+fprintf('Promover Uso de Vehículo Eléctrico: %.2f\n', media_promover_vehiculo_electrico);
+fprintf('Promoción de Electromovilidad: %.2f\n', media_promocion_electromovilidad);
+
+% Medias geométricas de cada criterio (valores proporcionados)
+media_economico = 3.79;
+media_ambiental = 4.82;
+media_tecnico = 4.81;
+media_politico = 5.57;
+media_social = 4.70;
+
+% Mostrar la media geométrica de cada criterio en la Command Window
+disp('Media geométrica de cada criterio:');
+fprintf('Económico: %.2f\n', media_economico);
+fprintf('Ambiental: %.2f\n', media_ambiental);
+fprintf('Técnico: %.2f\n', media_tecnico);
+fprintf('Político: %.2f\n', media_politico);
+fprintf('Social: %.2f\n', media_social);
+
+% Media geométrica de las alternativas para cada criterio
+
+% Económico
+media_incentivos_fiscales_economico = geomean([media_incentivos_fiscales, media_economico]);
+media_infraestructura_carga_economico = geomean([media_infraestructura_carga, media_economico]);
+media_promover_vehiculo_electrico_economico = geomean([media_promover_vehiculo_electrico, media_economico]);
+media_promocion_electromovilidad_economico = geomean([media_promocion_electromovilidad, media_economico]);
+
+% Mostrar la media geométrica de alternativas bajo criterio económico
+disp('Media geométrica de alternativas bajo criterio económico:');
+fprintf('Incentivos Fiscales: %.2f\n', media_incentivos_fiscales_economico);
+fprintf('Infraestructura de Carga: %.2f\n', media_infraestructura_carga_economico);
+fprintf('Promover Uso de Vehículo Eléctrico: %.2f\n', media_promover_vehiculo_electrico_economico);
+fprintf('Promoción de Electromovilidad: %.2f\n', media_promocion_electromovilidad_economico);
+
+%Ambiental
+media_incentivos_fiscales_ambiental = geomean([media_incentivos_fiscales,media_ambiental]);
+media_infraestructura_carga_ambiental = geomean([media_infraestructura_carga,media_ambiental]);
+media_promover_vehiculo_electrico_ambiental = geomean([media_promover_vehiculo_electrico,media_ambiental]);
+media_promocion_electromovilidad_ambiental = geomean([media_promocion_electromovilidad,media_ambiental]);
+
+% Mostrar la media geométrica de alternativas bajo criterio ambiental en la Command Window
+disp('Media geométrica de alternativas bajo criterio ambiental:');
+fprintf('Incentivos Fiscales: %.2f\n', media_incentivos_fiscales_ambiental);
+fprintf('Infraestructura de Carga: %.2f\n', media_infraestructura_carga_ambiental);
+fprintf('Promover Uso de Vehículo Eléctrico: %.2f\n', media_promover_vehiculo_electrico_ambiental);
+fprintf('Promoción de Electromovilidad: %.2f\n', media_promocion_electromovilidad_ambiental);
+
+%Tecnico
+media_incentivos_fiscales_tecnico = geomean([media_incentivos_fiscales,media_tecnico]);
+media_infraestructura_carga_tecnico = geomean([media_infraestructura_carga,media_tecnico]);
+media_promover_vehiculo_electrico_tecnico = geomean([media_promover_vehiculo_electrico,media_tecnico]);
+media_promocion_electromovilidad_tecnico = geomean([media_promocion_electromovilidad,media_tecnico]);
+
+% Mostrar la media geométrica de alternativas bajo criterio tecnico en la Command Window
+disp('Media geométrica de alternativas bajo criterio tecnico:');
+fprintf('Incentivos Fiscales: %.2f\n', media_incentivos_fiscales_tecnico);
+fprintf('Infraestructura de Carga: %.2f\n', media_infraestructura_carga_tecnico);
+fprintf('Promover Uso de Vehículo Eléctrico: %.2f\n', media_promover_vehiculo_electrico_tecnico);
+fprintf('Promoción de Electromovilidad: %.2f\n', media_promocion_electromovilidad_tecnico);
+
+%Politico
+media_incentivos_fiscales_politico = geomean([media_incentivos_fiscales,media_politico]);
+media_infraestructura_carga_politico = geomean([media_infraestructura_carga,media_politico]);
+media_promover_vehiculo_electrico_politico = geomean([media_promover_vehiculo_electrico,media_politico]);
+media_promocion_electromovilidad_politico = geomean([media_promocion_electromovilidad,media_politico]);
+
+% Mostrar la media geométrica de alternativas bajo criterio politico en la Command Window
+disp('Media geométrica de alternativas bajo criterio politico:');
+fprintf('Incentivos Fiscales: %.2f\n', media_incentivos_fiscales_politico);
+fprintf('Infraestructura de Carga: %.2f\n', media_infraestructura_carga_politico);
+fprintf('Promover Uso de Vehículo Eléctrico: %.2f\n', media_promover_vehiculo_electrico_politico);
+fprintf('Promoción de Electromovilidad: %.2f\n', media_promocion_electromovilidad_politico);
+
+%Social
+media_incentivos_fiscales_social = geomean([media_incentivos_fiscales,media_social]);
+media_infraestructura_carga_social = geomean([media_infraestructura_carga,media_social]);
+media_promover_vehiculo_electrico_social = geomean([media_promover_vehiculo_electrico,media_social]);
+media_promocion_electromovilidad_social = geomean([media_promocion_electromovilidad,media_social]);
+
+% Mostrar la media geométrica de alternativas bajo criterio social en la Command Window
+disp('Media geométrica de alternativas bajo criterio social:');
+fprintf('Incentivos Fiscales: %.2f\n', media_incentivos_fiscales_social);
+fprintf('Infraestructura de Carga: %.2f\n', media_infraestructura_carga_social);
+fprintf('Promover Uso de Vehículo Eléctrico: %.2f\n', media_promover_vehiculo_electrico_social);
+fprintf('Promoción de Electromovilidad: %.2f\n', media_promocion_electromovilidad_social);
+
+
+
+%%%Agrupacion de las medias geometricas de alternativas bajo cada
+%%% criterio para poder hacer la comparacion de matrices AHP
+
+
+% Agrupar las medias de alternativas bajo criterio economico en un vector para simplificar las comparaciones
+medias_alternativas_economico = [media_incentivos_fiscales_economico, media_infraestructura_carga_economico, media_promover_vehiculo_electrico_economico, media_promocion_electromovilidad_economico];
+n = length(medias_alternativas_economico);
+
+% Inicializar la matriz de comparación de criterios
+matriz_comparacion = ones(n, n);  % Inicializar con 1s en la diagonal
+
+% Paso 2: Llenar la matriz de comparación utilizando la escala de Saaty
+for i = 1:n
+    for j = i+1:n
+        % Diferencia relativa entre criterios
+        diff = abs(medias_alternativas_economico(i) - medias_alternativas_economico(j));
+        
+       if diff < 0.25
+    valor = 1;   % Igual de importantes
+elseif diff < 0.75
+    valor = 2;   % Muy ligeramente más importante
+elseif diff < 1.25
+    valor = 3;   % Ligeramente más importante
+elseif diff < 1.75
+    valor = 4;   % Entre ligeramente y claramente más importante
+elseif diff < 2.25
+    valor = 5;   % Claramente más importante
+elseif diff < 2.75
+    valor = 6;   % Entre claramente y mucho más importante
+elseif diff < 3.25
+    valor = 7;   % Mucho más importante
+elseif diff < 4.0
+    valor = 8;   % Entre mucho más y extremadamente más importante
+else
+    valor = 9;   % Extremadamente más importante
+end
+        
+        % Asignar valor en la matriz: si el criterio en la fila es mayor,
+        % él recibe el valor, si no, recibe el recíproco
+        if medias_alternativas_economico(i) > medias_alternativas_economico(j)
+            matriz_comparacion(i, j) = valor;
+            matriz_comparacion(j, i) = 1 / valor;
+        else
+            matriz_comparacion(i, j) = 1 / valor;
+            matriz_comparacion(j, i) = valor;
+        end
+    end
+end
+
+
+% Mostrar la matriz de comparación en la Command Window
+disp('Matriz de comparación de alternativas bajo criterio economico:');
+disp(array2table(matriz_comparacion, 'VariableNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad',}, ...
+                'RowNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad'}));
+
+    
+% Agrupar las medias de alternativas bajo criterio ambiental en un vector para simplificar las comparaciones
+medias_alternativas_ambiental = [media_incentivos_fiscales_ambiental, media_infraestructura_carga_ambiental, media_promover_vehiculo_electrico_ambiental, media_promocion_electromovilidad_ambiental];
+n = length(medias_alternativas_ambiental);
+
+% Inicializar la matriz de comparación de criterios
+matriz_comparacion = ones(n, n);  % Inicializar con 1s en la diagonal
+
+% Paso 2: Llenar la matriz de comparación utilizando la escala de Saaty
+for i = 1:n
+    for j = i+1:n
+        % Diferencia relativa entre criterios
+        diff = abs(medias_alternativas_ambiental(i) - medias_alternativas_ambiental(j));
+        
+        % Aplicar la escala de Saaty según la diferencia
+        if diff < 0.5
+            valor = 1;   % Igual de importantes
+        elseif diff < 1.0
+            valor = 3;   % Ligeramente más importante
+        elseif diff < 2.0
+            valor = 5;   % Claramente más importante
+        elseif diff < 3.0
+            valor = 7;   % Mucho más importante
+        else
+            valor = 9;   % Extremadamente más importante
+        end
+        
+        % Asignar valor en la matriz: si el criterio en la fila es mayor,
+        % él recibe el valor, si no, recibe el recíproco
+        if medias_alternativas_ambiental(i) > medias_alternativas_ambiental(j)
+            matriz_comparacion(i, j) = valor;
+            matriz_comparacion(j, i) = 1 / valor;
+        else
+            matriz_comparacion(i, j) = 1 / valor;
+            matriz_comparacion(j, i) = valor;
+        end
+    end
+end
+
+
+% Mostrar la matriz de comparación en la Command Window
+disp('Matriz de comparación de alternativas bajo criterio ambiental:');
+disp(array2table(matriz_comparacion, 'VariableNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad',}, ...
+                'RowNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad'}));
+
+
+% Agrupar las medias de alternativas bajo criterio tecnico en un vector para simplificar las comparaciones
+medias_alternativas_tecnico = [media_incentivos_fiscales_tecnico, media_infraestructura_carga_tecnico, media_promover_vehiculo_electrico_tecnico, media_promocion_electromovilidad_tecnico];
+n = length(medias_alternativas_tecnico);
+
+% Inicializar la matriz de comparación de criterios
+matriz_comparacion = ones(n, n);  % Inicializar con 1s en la diagonal
+
+% Paso 2: Llenar la matriz de comparación utilizando la escala de Saaty
+for i = 1:n
+    for j = i+1:n
+        % Diferencia relativa entre criterios
+        diff = abs(medias_alternativas_tecnico(i) - medias_alternativas_tecnico(j));
+        
+        % Aplicar la escala de Saaty según la diferencia
+        if diff < 0.5
+            valor = 1;   % Igual de importantes
+        elseif diff < 1.0
+            valor = 3;   % Ligeramente más importante
+        elseif diff < 2.0
+            valor = 5;   % Claramente más importante
+        elseif diff < 3.0
+            valor = 7;   % Mucho más importante
+        else
+            valor = 9;   % Extremadamente más importante
+        end
+        
+        % Asignar valor en la matriz: si el criterio en la fila es mayor,
+        % él recibe el valor, si no, recibe el recíproco
+        if medias_alternativas_tecnico(i) > medias_alternativas_tecnico(j)
+            matriz_comparacion(i, j) = valor;
+            matriz_comparacion(j, i) = 1 / valor;
+        else
+            matriz_comparacion(i, j) = 1 / valor;
+            matriz_comparacion(j, i) = valor;
+        end
+    end
+end
+
+
+% Mostrar la matriz de comparación en la Command Window
+disp('Matriz de comparación de alternativas bajo criterio tecnico:');
+disp(array2table(matriz_comparacion, 'VariableNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad',}, ...
+                'RowNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad'}));
+
+
+% Agrupar las medias de alternativas bajo criterio politico en un vector para simplificar las comparaciones
+medias_alternativas_politico = [media_incentivos_fiscales_politico, media_infraestructura_carga_politico, media_promover_vehiculo_electrico_politico, media_promocion_electromovilidad_politico];
+n = length(medias_alternativas_politico);
+
+% Inicializar la matriz de comparación de criterios
+matriz_comparacion = ones(n, n);  % Inicializar con 1s en la diagonal
+
+% Paso 2: Llenar la matriz de comparación utilizando la escala de Saaty
+for i = 1:n
+    for j = i+1:n
+        % Diferencia relativa entre criterios
+        diff = abs(medias_alternativas_politico(i) - medias_alternativas_politico(j));
+        
+        % Aplicar la escala de Saaty según la diferencia
+        if diff < 0.5
+            valor = 1;   % Igual de importantes
+        elseif diff < 1.0
+            valor = 3;   % Ligeramente más importante
+        elseif diff < 2.0
+            valor = 5;   % Claramente más importante
+        elseif diff < 3.0
+            valor = 7;   % Mucho más importante
+        else
+            valor = 9;   % Extremadamente más importante
+        end
+        
+        % Asignar valor en la matriz: si el criterio en la fila es mayor,
+        % él recibe el valor, si no, recibe el recíproco
+        if medias_alternativas_politico(i) > medias_alternativas_politico(j)
+            matriz_comparacion(i, j) = valor;
+            matriz_comparacion(j, i) = 1 / valor;
+        else
+            matriz_comparacion(i, j) = 1 / valor;
+            matriz_comparacion(j, i) = valor;
+        end
+    end
+end
+
+
+% Mostrar la matriz de comparación en la Command Window
+disp('Matriz de comparación de alternativas bajo criterio politico:');
+disp(array2table(matriz_comparacion, 'VariableNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad',}, ...
+                'RowNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad'}));
+
+
+% Agrupar las medias de alternativas bajo criterio social en un vector para simplificar las comparaciones
+medias_alternativas_social = [media_incentivos_fiscales_social, media_infraestructura_carga_social, media_promover_vehiculo_electrico_social, media_promocion_electromovilidad_social];
+n = length(medias_alternativas_social);
+
+% Inicializar la matriz de comparación de criterios
+matriz_comparacion = ones(n, n);  % Inicializar con 1s en la diagonal
+
+% Paso 2: Llenar la matriz de comparación utilizando la escala de Saaty
+for i = 1:n
+    for j = i+1:n
+        % Diferencia relativa entre criterios
+        diff = abs(medias_alternativas_social(i) - medias_alternativas_social(j));
+        
+        % Aplicar la escala de Saaty según la diferencia
+        if diff < 0.5
+            valor = 1;   % Igual de importantes
+        elseif diff < 1.0
+            valor = 3;   % Ligeramente más importante
+        elseif diff < 2.0
+            valor = 5;   % Claramente más importante
+        elseif diff < 3.0
+            valor = 7;   % Mucho más importante
+        else
+            valor = 9;   % Extremadamente más importante
+        end
+        
+        % Asignar valor en la matriz: si el criterio en la fila es mayor,
+        % él recibe el valor, si no, recibe el recíproco
+        if medias_alternativas_social(i) > medias_alternativas_social(j)
+            matriz_comparacion(i, j) = valor;
+            matriz_comparacion(j, i) = 1 / valor;
+        else
+            matriz_comparacion(i, j) = 1 / valor;
+            matriz_comparacion(j, i) = valor;
+        end
+    end
+end
+
+
+% Mostrar la matriz de comparación en la Command Window
+disp('Matriz de comparación de alternativas bajo criterio social:');
+disp(array2table(matriz_comparacion, 'VariableNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad',}, ...
+                'RowNames', {'Incentivos fiscales', 'Infraestructura de carga', 'Promover uso vehiculo electrico', 'Promocion electromovilidad'}));
+
